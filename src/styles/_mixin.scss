@@ -1,0 +1,11 @@
+@mixin show-up($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin show-down($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}

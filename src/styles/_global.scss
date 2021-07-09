@@ -1,0 +1,51 @@
+html {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hide-for-moblie {
+    @include show-up(1000px) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include show-down(1000px) {
+        display: none;
+    }
+}
+
+.space {
+    &-mt-1 {
+        margin-top: 1rem;
+    }
+
+    &-mb-1 {
+        margin-bottom: 1rem;
+    }
+
+    &-ml-1 {
+        margin-left: 1rem;
+    }
+
+    &-mr-1 {
+        margin-right: 1rem;
+    }
+}
